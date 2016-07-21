@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar twitter>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page Uno</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="page1">
+
+  <ion-card>
+    <img src="http://revistakuadro.com/wp-content/uploads/2015/08/nirvana.jpg" alt="">
+    <ion-card-content>
+      <ion-card-title>
+        Nirvana
+      </ion-card-title>
+      <p>La mejor banda del mundo</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>Notificacines</ion-label>
+    <ion-checkbox primary checked="true"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Start Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="time"></ion-datetime>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50>
+        <img src="http://revistakuadro.com/wp-content/uploads/2015/08/nirvana.jpg" alt="">
+      </ion-col>
+      <ion-col width-50>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, quasi perspiciatis voluptate illum, inventore nobis esse aspernatur eligendi at modi velit, dolorem ut voluptates accusamus iusto minima veritatis quidem quo.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Ionic Menu Starter</h3>
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  </p>
+  <button secondary menuToggle>Toggle Menu</button>
+  <button twitter >Hola</button>
+
+  <h1 primary>Hola</h1>
+  <button primary>Hola 2</button>
+  <p text-uppercase>hola</p>
+  <h1 class="title">Titulo</h1>
+
+  <h2 [class.title2]="show">Hola 2 clase</h2>
+  <h2 [attr.danger]="false">Hola 2 atributo</h2>
+
+  <ion-icon name="archive"></ion-icon>  
+   <ion-icon name="appstore"></ion-icon>
+
+   <button>
+     <ion-icon name="archive"></ion-icon> 
+     Hola
+   </button>
+
+   <button>
+     <i class="fa fa-camera-retro fa-4x"></i> 
+     Hola
+   </button>
+
+   <button twitter block>
+     <ion-icon name="archive"></ion-icon> 
+     Hola
+    </button>
+   <button twitter outline block>
+     <ion-icon name="archive"></ion-icon> 
+     Hola
+    </button>
+
+</ion-content>
